@@ -5,4 +5,13 @@
         # code...
         //or config is below
     }
+    //Allow errors
+    error_reporting(-1);
+    ini_set('display_errors','on');
+
+    //include the DB.php file
+    include_once "classes/DB.php";
+    include_once "classes/filter.php";
+
+        $con = DB::getconnection();
 ?>
