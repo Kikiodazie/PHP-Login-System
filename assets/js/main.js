@@ -111,7 +111,7 @@ $(document).on('submit', "form.js-register",function(event){
 
         }else if(data.error !== undefined){
             _error
-                .text(data.error)
+                .html(data.error)
                 .show();
         }
 		
