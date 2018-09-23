@@ -3,6 +3,8 @@
     define('__CONFIG__',true);
     require_once "inc/config.php";
 //require the config
+
+ForceDashboard();
 ?>
 
 <!DOCTYPE html>
