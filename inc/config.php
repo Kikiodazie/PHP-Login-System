@@ -18,7 +18,7 @@
     //include the DB.php file
     include_once "classes/DB.php";
     include_once "classes/filter.php";
-    include_once "inc/functions.php";
+    include_once "/wamp64/www/php_login_course/inc/functions.php";
 
         $con = DB::getconnection();
 ?>

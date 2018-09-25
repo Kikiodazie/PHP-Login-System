@@ -17,11 +17,12 @@
             //The user is allowed here but redirect anyway
             # code...
             Header("Location: /php_login_course/dashboard.php");
+            exit;
 
         }else {
         # code...
             //The user is not allowed here.
-            exit;
+           
        }
     }
 ?>

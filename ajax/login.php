@@ -40,7 +40,7 @@
 			$return['error'] = "You already have an account";
 		} else {
 			// They need to create a new account
-			$return['error'] = "You do not have an account. <a href='/register.php'>Create one now?</a>";
+			$return['error'] = "You do not have an account. <a href='/php_login_course/register.php'>Create one now?</a>";
 		}
 
 		echo json_encode($return, JSON_PRETTY_PRINT); exit;
