@@ -3,8 +3,11 @@
     define('__CONFIG__',true);
     require_once "inc/config.php";
 //require the config
-    ForceLogin();
+    page::ForceLogin();
 
+    $user = new User($_SESSION['user_id']);
+
+  
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +26,9 @@
 
     <body>
         <div class="uk-section uk-container">
-  		    DASHBOARD HERE: You are Signed in as a User: <?php echo $_SESSION['user_id'];?>
+  		    <h2>Dashboard</h2>
+            <p>Hello <?php echo $user->email; ?>, You registered by <?php echo $user->reg_time;?> </p>
+            <p> <a href= /php_login_course/logout.php> Logout </a> </p>
   	    </div>
 
         <?php require_once "inc/footer.php";?>

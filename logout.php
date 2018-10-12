@@ -5,7 +5,7 @@
 	setcookie(session_name(),'',0,'/');
 	session_regenerate_id(true);
 
-	header("Location: /index.php");
+	header("Location: /php_login_course/index.php");
 ?>
 
 
