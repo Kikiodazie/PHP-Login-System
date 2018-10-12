@@ -4,7 +4,7 @@
     require_once "inc/config.php";
 //require the config
 
-ForceDashboard();
+page::ForceDashboard();
 ?>
 
 <!DOCTYPE html>
